@@ -1,0 +1,16 @@
+{
+  "note": "Sample estimate rates used by the enquiry form. Replace with the bakery's real prices.",
+  "cakeSizes": {
+    "small":  { "label": "Small (serves 8-10)",  "price": 450 },
+    "medium": { "label": "Medium (serves 15-20)", "price": 650 },
+    "large":  { "label": "Large (serves 25-30)",  "price": 950 },
+    "tiered": { "label": "Tiered (serves 40-60)", "price": 1800 }
+  },
+  "cupcakeBoxPrice": 380,
+  "cateringPerGuest": 65,
+  "cateringMinGuests": 20,
+  "flavourSurcharge": { "vanilla": 0, "chocolate": 0, "lemon": 0, "red-velvet": 60, "salted-caramel": 60 },
+  "dietarySurchargeRate": 0.15,
+  "rushRate": 0.2,
+  "deliveryFee": 80
+}

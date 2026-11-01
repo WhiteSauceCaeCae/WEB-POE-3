@@ -1,0 +1,7 @@
+# Sweet Lips Bakery - instructions for search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /404.html
+
+Sitemap: https://sweetlipsbakery.netlify.app/sitemap.xml

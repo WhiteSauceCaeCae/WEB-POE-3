@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Pastries, Gourmet Cupcakes &amp; Custom Cakes | Sweet Lips Bakery</title>
+  <meta name="description" content="Browse the Sweet Lips Bakery menu: fresh pastries, gourmet cupcakes and custom cakes in Cape Town, with vegan and gluten-free options.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b2a12">
+  <link rel="canonical" href="https://sweetlipsbakery.netlify.app/menu.html">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sweet Lips Bakery">
+  <meta property="og:title" content="Menu | Pastries, Gourmet Cupcakes &amp; Custom Cakes | Sweet Lips Bakery">
+  <meta property="og:description" content="Browse the Sweet Lips Bakery menu: fresh pastries, gourmet cupcakes and custom cakes in Cape Town, with vegan and gluten-free options.">
+  <meta property="og:url" content="https://sweetlipsbakery.netlify.app/menu.html">
+  <meta property="og:image" content="https://sweetlipsbakery.netlify.app/images/hero-cake-display.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Sweet Lips Bakery home">SWEET <span>LIPS</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html" aria-current="page">Menu</a></li><li><a href="enquiry.html">Custom Orders</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <a class="btn btn--small" href="enquiry.html">Order Custom Cake</a>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Our Menu</h1>
+    <p class="lead">Fresh pastries, gourmet cupcakes and custom cakes. Search, filter and sort to find your treat.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="menu-controls" id="menu-controls" role="search" aria-label="Filter menu">
+      <div class="field">
+        <label for="menu-search">Search the menu</label>
+        <input type="search" id="menu-search" placeholder="e.g. chocolate, lemon, croissant" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="menu-diet">Dietary needs</label>
+        <select id="menu-diet">
+          <option value="all">All items</option>
+          <option value="vegan">Vegan</option>
+          <option value="gluten-free">Gluten-free</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="menu-sort">Sort by</label>
+        <select id="menu-sort">
+          <option value="name">Name (A&ndash;Z)</option>
+          <option value="price-asc">Price (low to high)</option>
+          <option value="price-desc">Price (high to low)</option>
+        </select>
+      </div>
+    </form>
+    <div class="filter-buttons" id="category-buttons" role="group" aria-label="Category">
+      <button class="filter-btn" type="button" data-category="all" aria-pressed="true">All</button>
+      <button class="filter-btn" type="button" data-category="Pastries" aria-pressed="false">Pastries</button>
+      <button class="filter-btn" type="button" data-category="Gourmet Cupcakes" aria-pressed="false">Gourmet Cupcakes</button>
+      <button class="filter-btn" type="button" data-category="Custom Cakes" aria-pressed="false">Custom Cakes</button>
+    </div>
+    <p class="results-count" id="results-count" role="status" aria-live="polite">Loading menu&hellip;</p>
+    <div class="grid" id="menu-grid"></div>
+    <noscript><p>Please enable JavaScript to view our interactive menu, or <a href="contact.html">contact us</a> for a price list.</p></noscript>
+  </div>
+</section>
+
+<dialog id="item-dialog" aria-labelledby="item-title">
+  <button class="dialog-close" type="button" aria-label="Close details" data-dialog-close>&times;</button>
+  <img class="lightbox-img" id="item-img" src="" alt="">
+  <div class="dialog-body">
+    <h2 id="item-title"></h2>
+    <p id="item-badges"></p>
+    <p id="item-desc"></p>
+    <p class="price" id="item-price"></p>
+    <a class="btn" href="enquiry.html">Enquire about this item</a>
+  </div>
+</dialog>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2 class="logo logo--footer">SWEET <span>LIPS</span></h2>
+        <p>Artisanal cupcakes, cakes and pastries baked fresh in Cape Town.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="enquiry.html">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit &amp; Call</h3>
+        <p>Cape Town, Western Cape<br>
+        <a href="tel:+27823113458">082 311 3458</a></p>
+        <p>Daily 08:00&ndash;20:00<br>Public holidays 09:00&ndash;17:00</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+        <p class="hint">Tag us in your celebration photos!</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span data-year>2026</span> Sweet Lips Bakery. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js" defer></script>
+<script src="js/menu.js" defer></script>
+</body>
+</html>

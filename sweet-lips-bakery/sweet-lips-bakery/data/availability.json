@@ -1,0 +1,6 @@
+{
+  "note": "Sample availability rules. Update the fully booked dates to match the bakery's calendar.",
+  "minNoticeDays": 3,
+  "rushNoticeDays": 7,
+  "fullyBooked": ["2026-11-14", "2026-12-13", "2026-12-24", "2026-12-25", "2026-12-31"]
+}

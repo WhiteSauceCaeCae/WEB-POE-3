@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Cake Enquiry &amp; Instant Quote | Sweet Lips Bakery</title>
+  <meta name="description" content="Enquire about custom cakes, cupcake boxes or event catering in Cape Town and get an instant cost and availability estimate.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3b2a12">
+  <link rel="canonical" href="https://sweetlipsbakery.netlify.app/enquiry.html">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sweet Lips Bakery">
+  <meta property="og:title" content="Custom Cake Enquiry &amp; Instant Quote | Sweet Lips Bakery">
+  <meta property="og:description" content="Enquire about custom cakes, cupcake boxes or event catering in Cape Town and get an instant cost and availability estimate.">
+  <meta property="og:url" content="https://sweetlipsbakery.netlify.app/enquiry.html">
+  <meta property="og:image" content="https://sweetlipsbakery.netlify.app/images/hero-cake-display.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Sweet Lips Bakery home">SWEET <span>LIPS</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="enquiry.html" aria-current="page">Custom Orders</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <a class="btn btn--small" href="enquiry.html">Order Custom Cake</a>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Custom Order Enquiry</h1>
+    <p class="lead">Tell us what you need and get an instant estimate of the cost and availability. A final quote is confirmed by our team.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+    <div class="panel">
+      <form id="enquiry-form" class="form" action="contact.html" method="post" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="60" autocomplete="name" aria-describedby="name-error">
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required maxlength="100" autocomplete="email" aria-describedby="email-error">
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+          <input type="tel" id="phone" name="phone" required inputmode="tel" autocomplete="tel" placeholder="082 311 3458 or +27 82 311 3458" pattern="^(\+27|0)\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4}$" aria-describedby="phone-error">
+          <p class="error" id="phone-error" role="alert"></p>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="orderType">What are you enquiring about? <span class="req" aria-hidden="true">*</span></label>
+            <select id="orderType" name="orderType" required aria-describedby="orderType-error">
+              <option value="">Choose&hellip;</option>
+              <option value="cake">Custom cake</option>
+              <option value="cupcakes">Gourmet cupcake boxes</option>
+              <option value="catering">Event catering (dessert table)</option>
+            </select>
+            <p class="error" id="orderType-error" role="alert"></p>
+          </div>
+          <div class="field" id="cakeSize-wrap" hidden>
+            <label for="cakeSize">Cake size <span class="req" aria-hidden="true">*</span></label>
+            <select id="cakeSize" name="cakeSize" aria-describedby="cakeSize-error">
+              <option value="">Choose&hellip;</option>
+              <option value="small">Small (serves 8&ndash;10)</option>
+              <option value="medium">Medium (serves 15&ndash;20)</option>
+              <option value="large">Large (serves 25&ndash;30)</option>
+              <option value="tiered">Tiered (serves 40&ndash;60)</option>
+            </select>
+            <p class="error" id="cakeSize-error" role="alert"></p>
+          </div>
+          <div class="field" id="quantity-wrap" hidden>
+            <label for="quantity" id="quantity-label">Quantity <span class="req" aria-hidden="true">*</span></label>
+            <input type="number" id="quantity" name="quantity" min="1" max="300" step="1" inputmode="numeric" aria-describedby="quantity-error">
+            <p class="error" id="quantity-error" role="alert"></p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="flavour">Cake flavour <span class="req" aria-hidden="true">*</span></label>
+            <select id="flavour" name="flavour" required aria-describedby="flavour-error">
+              <option value="">Choose&hellip;</option>
+              <option value="vanilla">Vanilla bean</option>
+              <option value="chocolate">Double chocolate</option>
+              <option value="lemon">Lemon</option>
+              <option value="red-velvet">Red velvet (+R60)</option>
+              <option value="salted-caramel">Salted caramel (+R60)</option>
+            </select>
+            <p class="error" id="flavour-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="eventDate">Event date <span class="req" aria-hidden="true">*</span></label>
+            <input type="date" id="eventDate" name="eventDate" required aria-describedby="eventDate-error">
+            <p class="error" id="eventDate-error" role="alert"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="dietary">Dietary requirements</label>
+          <select id="dietary" name="dietary">
+            <option value="none">None</option>
+            <option value="vegan">Vegan (+15%)</option>
+            <option value="gluten-free">Gluten-free (+15%)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label><input type="checkbox" id="delivery" name="delivery"> Deliver in Greater Cape Town (+R80)</label>
+        </div>
+        <div class="field">
+          <label for="details">Design ideas or extra details</label>
+          <textarea id="details" name="details" maxlength="500" aria-describedby="details-error details-hint"></textarea>
+          <p class="hint" id="details-hint"><span id="details-count">0</span>/500 characters</p>
+          <p class="error" id="details-error" role="alert"></p>
+        </div>
+        <button class="btn" type="submit">Get my estimate</button>
+      </form>
+      <div class="result-box" id="enquiry-result" tabindex="-1" role="region" aria-label="Your estimate" hidden></div>
+    </div>
+    <aside>
+      <h2>How it works</h2>
+      <ol>
+        <li>Fill in the form with your event details.</li>
+        <li>We check availability and calculate an estimate instantly.</li>
+        <li>Call or message us on <a href="tel:+27823113458">082 311 3458</a> to confirm your booking.</li>
+      </ol>
+      <p class="hint">Estimates are guides only. Final pricing depends on the design. Orders need at least 3 days&rsquo; notice. Have a general question instead? Use the <a href="contact.html">contact form</a>.</p>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2 class="logo logo--footer">SWEET <span>LIPS</span></h2>
+        <p>Artisanal cupcakes, cakes and pastries baked fresh in Cape Town.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="enquiry.html">Custom Orders</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visit &amp; Call</h3>
+        <p>Cape Town, Western Cape<br>
+        <a href="tel:+27823113458">082 311 3458</a></p>
+        <p>Daily 08:00&ndash;20:00<br>Public holidays 09:00&ndash;17:00</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+        <p class="hint">Tag us in your celebration photos!</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span data-year>2026</span> Sweet Lips Bakery. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/main.js" defer></script>
+<script src="js/validate.js" defer></script>
+<script src="js/enquiry.js" defer></script>
+</body>
+</html>
